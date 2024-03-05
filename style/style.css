@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  list-style: none;
 }
 
 :root {
@@ -50,6 +51,7 @@ nav a {
   align-items: center;
   /* margin-right: 10rem; */
   flex-grow: 1;
+  position: relative;
 }
 
 .head__sider a h3 {
@@ -60,6 +62,148 @@ nav a {
 #Herre {
   border-right: 3px solid #a1a1a1;
 }
+
+/* ul li{
+  display: inline-block;
+  position: relative;
+}
+
+.dropdown {
+  position: absolute;
+  background-color: bisque;
+  display: flex;
+  flex-direction: column;
+
+  width: 500px;
+}
+
+.dropdown li {
+  padding: 25px 35px;
+}
+
+.dropdown li:first-child{
+  background-image: url(/assests/bilder/pexels-tembela-bohle-1884583.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.dropdown li:nth-child(2){
+  background-image: url(/assests/bilder/pexels-mnz-1598505.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.dropdown li:nth-child(3){
+  background-image: url(/assests/bilder/pexels-marta-branco-1453008.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.dropdown li a p{
+  color: #000;
+  padding: 5px;
+  position: relative;
+  left: 60%;
+  top: 50%;
+  transform: translateX(50%);
+  width: 25%;
+  text-align: center;
+  background-color: var(--bg-color);
+} */
+
+/* .fade-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to left,rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .1)0%, rgba(255, 255, 255)100%);
+} */
+
+ul li{
+  display: inline-block;
+  position: relative;
+}
+
+ul li a {
+  display: block;
+  padding: 50px 200px;
+  text-decoration: none;
+  text-align: center;
+}
+
+ul.dropdown li {
+  display: block;
+  
+}
+
+ul.dropdown li a {
+  font-size: 18px;
+  color: var(--bg-color);
+}
+
+ul li ul.dropdown {
+  width: 100%;
+  background-color: burlywood;
+  position: absolute;
+  z-index: 999;
+  display: none;
+}
+
+ul.dropdown li a:hover{
+  background-color: rgb(197, 174, 145);
+}
+
+ul li:hover ul.dropdown{
+  display: block;
+  transition: all.55s;
+} 
+
+.dropdown li:first-child{
+  background-image: url(/assests/bilder/pexels-tembela-bohle-1884583.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.dropdown li:nth-child(2){
+  background-image: url(/assests/bilder/pexels-mnz-1598505.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.dropdown li:nth-child(3){
+  background-image: url(/assests/bilder/pexels-marta-branco-1453008.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* .dropdown {
+  background-color: #686868;
+  position: absolute;
+  top: 30px;
+  border-radius: 10px;
+ 
+}
+
+.dropdown li{
+  margin-bottom: 20px;
+  padding: 1rem 2em;
+  
+  width: 100%;
+}
+
+.dropdown li a{
+  color: var(--second-color);
+}
+
+.dropdown li:hover{
+  background-color: var(--bg-color);
+} */
 
 .search {
   position: relative;
@@ -110,6 +254,20 @@ nav a {
   justify-content: center;
   text-align: center;
   font-size: 15px;
+}
+
+/*Hero Page*/
+
+.heroPics{
+  display: flex;
+  justify-content: center;
+}
+.heroPics img{
+  width: 90%;
+}
+.hero_img,
+.hero__img{
+  width: 50%;
 }
 
 /*Responsive*/
