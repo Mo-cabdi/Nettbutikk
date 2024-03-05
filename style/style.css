@@ -17,6 +17,7 @@ body {
   background-color: var(--bg-color);
 }
 
+/*Header & Nav*/
 header {
   height: 80px;
   background-color: var(--second-color);
@@ -97,6 +98,21 @@ nav a {
 .menu__icon{
   display: none;
 }
+
+/*Subheader*/
+
+.subHeader {
+  height: 50px;
+  background-color: var(--btn-color);
+  color: var(--second-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-size: 15px;
+}
+
+/*Responsive*/
 
 @media (max-width: 1250px){
   .search__box {
@@ -188,37 +204,10 @@ nav a {
     font-size: 28px;
     gap: 5px;
   }
-  /* .nav__mobile {
-    height: 100%;
-    width: 95%;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center; 
+  
+  .subHeader {
+    font-size: 13px;
   }
-
-  .nav__mobile a {
-    text-decoration: none;
-    color: var(--btn-color);
-  }
-
-  .nav__logo {
-    font-size: 1.8rem;
-    font-weight: 800;
-    flex-grow: 1;
-  }
-
-  .nav__logo div{
-    font-size: 2rem;
-  }
-
-  .nav__icons {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    font-size: 28px;
-    margin-right: 5px; 
-  } */
 
 } 
 
