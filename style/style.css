@@ -156,20 +156,39 @@ nav a {
 }
 
 @media (max-width: 550px){
-  nav{
+  .search__box{
     display: none;
   }
-
+  .search i {
+    font-size: 30px;
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  
   header {
     height: 75px;
+  }
+
+  nav{
+    width: 98%;
+    gap: 5px;
   }
   
   .menu__icon{
     font-size: 40px;
-    margin-right: .5rem;
   }
 
-  .nav__mobile {
+  .head__logo{
+    font-size: 1.8rem;
+  }
+  .head__icons{
+    font-size: 28px;
+    gap: 5px;
+  }
+  /* .nav__mobile {
     height: 100%;
     width: 95%;
     margin: 0 auto;
@@ -199,7 +218,7 @@ nav a {
     gap: 8px;
     font-size: 28px;
     margin-right: 5px; 
-  }
+  } */
 
 } 
 
