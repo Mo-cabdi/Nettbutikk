@@ -157,7 +157,70 @@ nav a {
   letter-spacing: 3px;
   width: 100px;
   height: 50px;
+  cursor: pointer;
 }
+
+/*member sec*/
+.members {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+
+.offer__txt h1{
+  font-size: 1.8rem;
+  font-weight: 900;
+  letter-spacing: 2.5px;
+}
+
+.offer__txt p:nth-child(2){
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+.offer__txt p:nth-child(3){
+  margin-top: 1.5em;
+  font-size: 1.1rem;
+}
+
+.members form{
+  background-color: var(--second-color);
+  width: 50%;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+.submit_btn{
+  width: 90%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  background: var(--btn-color);
+  border: none;
+  cursor: pointer;
+}
+.members form input{
+  width: 90%;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  padding-right: 2rem;
+  border: none;
+}
+.submit_btn p{
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: var(--bg-color);
+}
+
 
 /*Responsive*/
 
@@ -189,6 +252,20 @@ nav a {
   .hero__img {
     width: 90%;
     height: 75vh;
+  }
+
+  /*member sec*/
+  .members{
+    width: 85%;
+  }
+  .offer__txt p:nth-child(2){
+    font-size: 2.5rem;
+  }
+  .offer__txt p:nth-child(3){
+    font-size: 1rem;
+  }
+  .members form{
+    width: 60%;
   }
 }
 @media (max-width: 840px) { 
@@ -227,6 +304,19 @@ nav a {
     background-image: var(--smallScreen-heroImg);
     width: 95%;
     height: 70vh;
+  }
+/*member sec*/
+  .members{
+    width: 90%;
+  }
+  .members form {
+    width: 65%;
+  }
+  .offer__txt p:nth-child(2){
+    font-size: 2rem;
+  }
+  .offer__txt h1{
+    font-size: 1.8rem;
   }
 
 
@@ -278,6 +368,18 @@ nav a {
   .selection__btn button{
     width: 90px;
     font-size: .9rem;
+  }
+
+  /*member sec*/
+  .members{
+    width: 85%;
+
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 4rem;
+  }
+  .members form {
+    width: 100%;
   }
 } 
 
