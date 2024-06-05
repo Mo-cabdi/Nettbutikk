@@ -1,0 +1,72 @@
+/*Dame/Herre sidet*/
+.sider{
+  min-height: 100vh; 
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  gap: 5rem;
+  color: var(--txt-color);
+  margin-top: 4rem;
+  margin-bottom: 9rem;
+}
+
+aside h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 1em;  
+  color: var(--txt-color);
+}
+aside li{
+ margin-bottom: 1rem;
+}
+aside li a {
+  color: var(--txt-color);
+  font-size: 1rem;
+}
+
+.klær:hover .dropDown {
+  display: block;
+}
+
+/*Responsive code*/
+
+@media (max-width: 1250px){
+.sider{
+  width: 95%;
+}
+
+}
+@media (max-width: 1000px) { 
+.sider{
+  margin-bottom: 3rem;
+}
+aside{
+  display: none;
+}
+
+
+ .product1 .product_sider {
+  width: 20%;
+ }
+
+}
+@media (max-width: 650px){
+  .sider{
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 1rem;
+    margin-bottom: 10rem;
+  }
+
+  .descrip h5 {
+    font-size: 11px;
+  }
+  .descrip h4 {
+    font-size: 12px;
+  }
+  .descrip span {
+    font-size: 10px;
+  }
+
+} 

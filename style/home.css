@@ -1,0 +1,265 @@
+/* Forsiden CSS */
+
+/*Subheader*/
+
+.subHeader {
+  height: 50px;
+  background-color: var(--footer-copyright-color);
+  color: var(--txt-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-size: 15px;
+}
+
+
+/*HeroSec*/
+#hero__pic{
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+
+.hero__img{  
+  background-color: transparent;
+  width: 100%;
+  max-width: 1858px;
+  height: 85vh;
+  margin: 0 auto;
+  margin-top: 0px;
+  display: flex;
+  justify-content: space-between;
+}
+.hero__img .model {
+  position: relative;
+  width: 50%;
+  height: 100%;
+}
+
+.hero__img .model img{
+  width: 100%;
+  height: 100%;
+}
+
+
+.men-selection-btn{
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+}
+.women-selection-btn {
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+}
+
+.men-selection-btn,
+.women-selection-btn{
+  background: var(--btn-color);
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 3px;
+  width: 100px;
+  height: 50px;
+  cursor: pointer;
+}
+.women-selection-btn a,
+.men-selection-btn a{
+  color: var(--bg-color);
+}
+
+/* Features Sec */
+#feature{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#feature .feature__box {
+  width: 180px;
+  text-align: center;
+  padding: 25px 15px;
+  box-shadow: 20px 20px 34px rgb(0, 0, 0, 0.03);
+  border: 1px solid #cce7dc;
+  border-radius: 4px;
+  margin: 15px 0;
+}
+
+#feature .feature__box img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+#feature .feature__box:hover {
+  box-shadow: 10px 10px 54px rgb(0, 0, 0, 0.1);
+}
+#feature .feature__box h6 {
+  display: inline-block;
+  padding: 9px 8px 6px 8px;
+  line-height: 1;
+  border-radius: 4px;
+  color: var(--bg-color);
+  background-color: #616161;
+}
+
+/* Banner Sec */
+#banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: var(--second-color);
+  width: 100%;
+  height: 40vh;
+}
+
+#banner h4 {
+  color: var(--txt-color);
+  font-size: 16px;
+}
+
+#banner h2 {
+  color: var(--txt-color);
+  font-size: 30px;
+  padding: 10px 0;
+}
+
+#banner h2 span {
+  color: #ef3636;
+}
+
+#banner button {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 15px 30px;
+  color: #fff;
+  background-color: var(--btn-color);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+  transition: 0.2s;
+}
+
+#banner button:hover {
+  color: #A6A6A6;
+}
+
+/*Responsive code*/
+
+@media (max-width: 1250px){
+  #feature .feature__box {
+    width: 150px;
+  }
+
+  /*member sec*/
+  #members{
+    width: 85%;
+  }
+  .offer__txt p:nth-child(2){
+    font-size: 2.5rem;
+  }
+  .offer__txt p:nth-child(3){
+    font-size: 1rem;
+  }
+  #members form{
+    width: 60%;
+  }
+}
+@media (max-width: 1000px) { 
+   /*feature*/
+
+  #feature {
+    width: 70%;
+    justify-content: center;
+  }
+  #feature .feature__box {
+    margin: 15px;
+  }
+
+  #banner {
+    height: 20vh;
+  }
+
+
+}
+
+@media (max-width: 770px){
+ 
+  .subHeader {
+    font-size: 13px;
+  }
+
+  #feature .feature__box {
+    width: 155px;
+    margin: 0 0 15px 0;
+  }
+
+  #feature {
+    justify-content: space-between;
+  }
+
+  #banner {
+    height: 40vh;
+  }
+
+  #banner {
+    height: 25vh;
+  }
+
+  /*member sec*/
+  #members{
+    width: 85%;
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 4rem;
+  }
+  #members form {
+    width: 100%;
+  }
+} 
+
+@media (max-width: 660px){
+  /*HeroSec*/
+  #hero__pic {
+    margin-bottom: 25rem;
+  }
+  .hero__img{
+    display: flex;
+    flex-direction: column;
+    gap: .1rem;
+    width: 100%;
+    height: 43vh;
+  }
+  .hero__img .model {
+    width: 100%;
+    position: relative;
+  }
+
+  .men-selection-btn,
+  .women-selection-btn {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .men-selection-btn, 
+  .women-selection-btn{
+    width: 100px;
+    height: 40px;
+    font-size: .9rem;
+  }
+
+  #feature {
+    width: 90%;
+    justify-content: center;
+    gap: .5rem;
+  }
+  #feature .feature__box {
+    width: 145px;
+  }
+} 
+ 
